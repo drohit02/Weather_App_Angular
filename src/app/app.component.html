@@ -1,0 +1,60 @@
+<div class="container" *ngIf="true">
+
+  <div class="upper-data">
+    <img src="../assets/hot.jpg" alt="hotpic" *ngIf="14 >15">
+    <img src="../assets/cold.jpg" alt="coldpic" *ngIf="14 <=15">
+
+    <div class="weather-data">
+      <div class="location">Nashik</div>
+      <div class="temperature">{{32}}°C</div>
+    </div>
+
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/thermo.png" alt="">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/maxTemp.jpg " alt="">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          50°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/thermo.png" alt="">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          77%
+        </div>
+      </div>
+      
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/thermo.png" alt="">
+          <span>wind speed</span>
+        </div>
+        <div class="info-block-value">
+          11km/hr
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
